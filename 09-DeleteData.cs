@@ -6,7 +6,7 @@ using System.Xml.Serialization;
 
 namespace C__Dabase_Connectivity
 {
-    internal class Program
+    internal class Program9
     {
         static string ConnectionString = "Server=localhost\\SQL22;Database=ContactsDB;Trusted_Connection=True;";
 
@@ -41,14 +41,14 @@ namespace C__Dabase_Connectivity
             {
                 Console.WriteLine(ex.ToString());
             }
-        
+
         }
 
-        static void Main(string[] args)
+        static void ain(string[] args)
         {
 
             DeleteContact(9);
-           
+
             Console.ReadKey();
         }
     }
