@@ -48,6 +48,7 @@
     <Compile Include="04-ExecuteScalar.cs" />
     <Compile Include="05-FindSingleContact.cs" />
     <Compile Include="06-Insert-AddData.cs" />
+    <Compile Include="07-RetrieveAutoNumberAfterInserting.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
