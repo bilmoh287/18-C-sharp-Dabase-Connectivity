@@ -6,7 +6,7 @@ using System.Xml.Serialization;
 
 namespace C__Dabase_Connectivity
 {
-    internal class Program
+    internal class Program5
     {
         static string ConnectionString = "Server=localhost\\SQL22;Database=ContactsDB;Trusted_Connection=True;";
 
@@ -63,7 +63,7 @@ namespace C__Dabase_Connectivity
 
         }
 
-        static void Main(string[] args)
+        static void main(string[] args)
         {
             stContact contactInfo = new stContact();
 

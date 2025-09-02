@@ -46,6 +46,7 @@
     <Compile Include="03-ParamareterizedQueryWithLIKE.cs" />
     <Compile Include="02-ParameterizedQuery.cs" />
     <Compile Include="04-ExecuteScalar.cs" />
+    <Compile Include="05-FindSingleContact.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
