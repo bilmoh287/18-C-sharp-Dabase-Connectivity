@@ -151,7 +151,7 @@ namespace C__Dabase_Connectivity
 
         }
 
-        static void Main(string[] args)
+        static void main(string[] args)
         {
             Console.WriteLine("----------Start With 'J' \n");
             PrintAllNamesStartWith("Jo");
