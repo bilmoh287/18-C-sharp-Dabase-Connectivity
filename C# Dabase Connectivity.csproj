@@ -52,6 +52,7 @@
     <Compile Include="08-UpdateData.cs" />
     <Compile Include="09-DeleteData.cs" />
     <Compile Include="10-INStatement.cs" />
+    <Compile Include="DT Aggregate Examples.cs" />
     <Compile Include="DataTableExample.cs" />
     <Compile Include="DataTableExample2.cs" />
     <Compile Include="Program.cs" />

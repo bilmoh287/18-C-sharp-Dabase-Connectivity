@@ -1,25 +1,24 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
-using System.Net;
-using System.Data.SqlClient;
-using System.Xml.Serialization;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace C__Dabase_Connectivity
 {
-    internal class Program
+    internal class Class1
     {
-
-        static void Main(string[] args)
+        static void main(string[] args)
         {
             DataTable dtEmployee = new DataTable();
             dtEmployee.TableName = "EmployeesDataTable";
 
             dtEmployee.Columns.Add("ID", typeof(int));
-            dtEmployee.Columns.Add ("Name", typeof(string));
-            dtEmployee.Columns.Add("Country",  typeof(string));
-            dtEmployee.Columns.Add("Salary",  typeof(Double));
-            dtEmployee.Columns.Add("Date",  typeof(DateTime));
+            dtEmployee.Columns.Add("Name", typeof(string));
+            dtEmployee.Columns.Add("Country", typeof(string));
+            dtEmployee.Columns.Add("Salary", typeof(Double));
+            dtEmployee.Columns.Add("Date", typeof(DateTime));
 
             dtEmployee.Rows.Add(1, "Bilal", "Ethiopia", 500, DateTime.Now);
             dtEmployee.Rows.Add(2, "Mohammed", "Jordan", 17000, DateTime.Now);
@@ -40,7 +39,7 @@ namespace C__Dabase_Connectivity
             MaxlSalaries = Convert.ToDouble(dtEmployee.Compute("MAX(Salary)", string.Empty));
 
             Console.WriteLine("\t Employees List");
-            foreach (DataRow row in dtEmployee.Rows )
+            foreach (DataRow row in dtEmployee.Rows)
             {
                 Console.WriteLine("ID : {0}\tName : {1}\tCountry : {2}\tSalary : {3}\tDate : {4}\t",
                     row["ID"], row["Name"], row["Country"], row["Salary"], row["Date"]);
@@ -62,7 +61,7 @@ namespace C__Dabase_Connectivity
             Console.WriteLine("\n\n\t Employees List Only from Jordan");
             foreach (DataRow row in ResultRows)
             {
-                Console.WriteLine("ID : {0}\tName : {1}\tCountry : {2}\tSalary : {3}\tDate : {4}\t", 
+                Console.WriteLine("ID : {0}\tName : {1}\tCountry : {2}\tSalary : {3}\tDate : {4}\t",
                     row["ID"], row["Name"], row["Country"], row["Salary"], row["Date"]);
             }
 
