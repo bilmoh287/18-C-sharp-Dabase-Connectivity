@@ -53,6 +53,7 @@
     <Compile Include="09-DeleteData.cs" />
     <Compile Include="10-INStatement.cs" />
     <Compile Include="Data View Sorting.cs" />
+    <Compile Include="Date Table Deletecs.cs" />
     <Compile Include="DT Aggregate Examples.cs" />
     <Compile Include="DataTableExample.cs" />
     <Compile Include="DataTableExample2.cs" />

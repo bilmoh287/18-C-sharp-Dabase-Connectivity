@@ -39,7 +39,7 @@ namespace C__Dabase_Connectivity
             MinSalaries = Convert.ToDouble(dtEmployee.Compute("MIN(Salary)", string.Empty));
             MaxlSalaries = Convert.ToDouble(dtEmployee.Compute("MAX(Salary)", string.Empty));
 
-            Console.WriteLine("\t Employees List");
+            Console.WriteLine("\n\t Employees List\n");
             foreach (DataRow row in dtEmployee.Rows )
             {
                 Console.WriteLine("ID : {0}\tName : {1}\tCountry : {2}\tSalary : {3}\tDate : {4}\t",
@@ -53,32 +53,18 @@ namespace C__Dabase_Connectivity
             Console.WriteLine("Minimun Salary = " + MinSalaries);
             Console.WriteLine("Maximum Salary = " + MaxlSalaries);
 
-            dtEmployee.DefaultView.Sort = "ID desc";
-            dtEmployee = dtEmployee.DefaultView.ToTable();
+            DataRow[] RowResult;
+            RowResult = dtEmployee.Select("ID = 1");
 
-            Console.WriteLine("\t\n Employees List Sorted by ID DESC\n");
-            foreach (DataRow row in dtEmployee.Rows)
+            foreach (var row in RowResult)
             {
-                Console.WriteLine("ID : {0}\tName : {1}\tCountry : {2}\tSalary : {3}\tDate : {4}\t",
-                    row["ID"], row["Name"], row["Country"], row["Salary"], row["Date"]);
+                row.Delete();
             }
 
+            //To Make changes made in DataTable also in DB
+            dtEmployee.AcceptChanges();
 
-            dtEmployee.DefaultView.Sort = "Name ASC";
-            dtEmployee = dtEmployee.DefaultView.ToTable();
-
-            Console.WriteLine("\t\n Employees List Sorted by Name ASC\n");
-            foreach (DataRow row in dtEmployee.Rows)
-            {
-                Console.WriteLine("ID : {0}\tName : {1}\tCountry : {2}\tSalary : {3}\tDate : {4}\t",
-                    row["ID"], row["Name"], row["Country"], row["Salary"], row["Date"]);
-            }
-
-
-            dtEmployee.DefaultView.Sort = "Salary DESC";
-            dtEmployee = dtEmployee.DefaultView.ToTable();
-
-            Console.WriteLine("\t\n Employees List Sorted by Salary DESC\n");
+            Console.WriteLine("\t Employees List after Deleting ID = 4");
             foreach (DataRow row in dtEmployee.Rows)
             {
                 Console.WriteLine("ID : {0}\tName : {1}\tCountry : {2}\tSalary : {3}\tDate : {4}\t",
