@@ -18,6 +18,12 @@ namespace C__Dabase_Connectivity
             string Query = @"DELETE Contacts
                              WHERE ContactID IN (" + ContactIDs + ");";
 
+            //string Query = @"DELETE FROM Contacts
+            //         WHERE ContactID IN (
+            //             SELECT value 
+            //             FROM STRING_SPLIT(@ContactIDs, ',')
+            //         )";
+
             SqlCommand command = new SqlCommand(Query, connection);
 
             try

@@ -15,7 +15,7 @@ namespace C__Dabase_Connectivity
 
             SqlConnection connection = new SqlConnection(ConnectionString);
 
-            string Query = @"Delete Contacts Where ContactID = @ContactID;";
+            string Query = @"Delete Contacts Where ContactName = @ContactID;";
 
             SqlCommand command = new SqlCommand(Query, connection);
 
