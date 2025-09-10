@@ -52,11 +52,11 @@
     <Compile Include="08-UpdateData.cs" />
     <Compile Include="09-DeleteData.cs" />
     <Compile Include="10-INStatement.cs" />
-    <Compile Include="Data View Sorting.cs" />
-    <Compile Include="Date Table Deletecs.cs" />
-    <Compile Include="DT Aggregate Examples.cs" />
-    <Compile Include="DataTableExample.cs" />
-    <Compile Include="DataTableExample2.cs" />
+    <Compile Include="14-Data View Sorting.cs" />
+    <Compile Include="15-Date Table Deletecs.cs" />
+    <Compile Include="13-DT Aggregate Examples.cs" />
+    <Compile Include="11-DataTableExample.cs" />
+    <Compile Include="12-DataTableExample2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
