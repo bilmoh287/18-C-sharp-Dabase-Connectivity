@@ -57,6 +57,7 @@
     <Compile Include="13-DT Aggregate Examples.cs" />
     <Compile Include="11-DataTableExample.cs" />
     <Compile Include="12-DataTableExample2.cs" />
+    <Compile Include="16-DataTableUpdate2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

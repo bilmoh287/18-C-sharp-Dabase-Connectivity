@@ -9,7 +9,7 @@ namespace C__Dabase_Connectivity
 {
     internal class Date_Table_Deletecs
     {
-        static void Main(string[] args)
+        static void main(string[] args)
         {
             DataTable dtEmployee = new DataTable();
             dtEmployee.TableName = "EmployeesDataTable";
