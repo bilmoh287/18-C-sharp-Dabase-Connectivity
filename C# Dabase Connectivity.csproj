@@ -59,6 +59,7 @@
     <Compile Include="12-DataTableExample2.cs" />
     <Compile Include="16-DataTableUpdate2.cs" />
     <Compile Include="17-DatatTableClear.cs" />
+    <Compile Include="18-DataTablePrimaryKey.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
